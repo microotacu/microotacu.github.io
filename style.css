@@ -1,0 +1,32 @@
+body {background: #403A3A url(images/fon.jpg); margin: 0; padding: 0; font: 16px/24px Arial, Tahoma, sans-serif;}
+a{text-decoration: none}
+
+/*Структура сайта*/
+div.mid {width: 1900px; margin: 0 auto}
+div.header {height: 205px; background:#EF98AA;}
+div.footer{margin: 20px 0; text-align: center; text-transform: uppercase;}
+
+/*Шапка сайта*/
+.otacu {display: block; float: center;}
+.otacu2 {display: block; float: right;}
+.otacu1 {display: block; float: left; margin-top: 70px; margin-right: 240px;}
+
+/*Главное меню*/
+div.menu {background: #1683a3; border: solid #016c8b; border-left: none; border-right: none;}
+div.menu ul { margin: 0; padding: 0;  list-style: none; text-align: left;}
+div.menu ul li {display: inline-block; margin: 5px 10px;}
+div.menu ul li a {color: #fff; text-transform: uppercase; text-shadow: 1px 1px 3px #0b4455;} /**цвет букв меню**/
+div.menu ul li a:hover{color: #a3e1f3;}
+
+
+/*Контент сайта*/
+.content { padding-bottom: 90px; position: relative; top:45px;}
+/*Нумерация и подвал*/
+
+div.item-list {position: relative; top: 0px; padding: 0 auto; margin: 0 auto; background: #1683a3; border: solid #016c8b; border-left: none; border-right: none;}
+div.item-list ul { margin: 0; padding: 0;  list-style: none; text-align: left;}
+div.item-list ul li {display: inline-block; margin: 5px 10px;}
+div.item-list ul li {color: #000000; text-transform: uppercase;}
+div.item-list ul li :hover{color: #FFF;}
+.foot-menu {background: #EF98AA; border: solid #EF98AA; border-left: none; border-right: none;}
+.foot-menu ul li a { font-weight: bold; color: #000000	; text-transform: uppercase;}
