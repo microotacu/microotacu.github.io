@@ -18,7 +18,6 @@ div.menu ul li {display: inline-block; margin: 5px 10px;}
 div.menu ul li a {color: #fff; text-transform: uppercase; text-shadow: 1px 1px 3px #0b4455;} /**цвет букв меню**/
 div.menu ul li a:hover{color: #a3e1f3;}
 
-
 /*Контент сайта*/
 .content { padding-bottom: 90px; position: relative; top:45px;}
 /*Нумерация и подвал*/
@@ -27,6 +26,9 @@ div.item-list {position: relative; top: 0px; padding: 0 auto; margin: 0 auto; ba
 div.item-list ul { margin: 0; padding: 0;  list-style: none; text-align: left;}
 div.item-list ul li {display: inline-block; margin: 5px 10px;}
 div.item-list ul li {color: #000000; text-transform: uppercase;}
-div.item-list ul li :hover{color: #FFF;}
+div.item-list ul li :hover{color: #FFF; -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+}
 .foot-menu {background: #EF98AA; border: solid #EF98AA; border-left: none; border-right: none;}
 .foot-menu ul li a { font-weight: bold; color: #000000	; text-transform: uppercase;}
