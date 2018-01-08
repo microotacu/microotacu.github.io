@@ -4,7 +4,7 @@ RewriteBase /
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTPS
 
-RewriteRule ^([^.]+)\.html$ https://microotacu.github.io/$1 [R=301,L]
+RewriteRule ^([^.]+)\.html$ https://microotacu.github.io/miniart$1 [R=301,L]
 
 RewriteCond %{REQUEST_URI} !(\.[^./]+)$
 
