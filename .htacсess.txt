@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^miniart\.html$ http://microotacu.github.io/miniart/ [R=301,L]
