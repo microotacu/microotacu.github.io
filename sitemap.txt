@@ -8,3 +8,6 @@
 8. https://microotacu.github.io/fonart-page2
 9. https://microotacu.github.io/fonart-page3
 10. https://microotacu.github.io/fonart-page4
+11. https://microotacu.github.io/page=6
+12. https://microotacu.github.io/page=7
+13. https://microotacu.github.io/page=8

@@ -20,12 +20,37 @@ div.menu ul li a:hover{color: #a3e1f3;}
 
 /*Контент сайта*/
 .content { padding-bottom: 90px; position: relative; top:45px;}
-.art a img {
-    border: 3px solid #016c8b; /* Рамка вокруг ссылок */
-   }
-   a:visited img {
-    border: 3px solid #c716bd; /* Рамка вокруг посещенных ссылок */
-   } 
+
+/*Арты на пк*/
+
+.foc {
+width:352px;
+height:240px;
+cursor:pointer; 
+display:inline;
+border: 4px solid #016c8b;
+}
+.foc:focus {
+height: auto;	 
+width: 1600px; 
+z-index: 100;
+}
+
+/*Арты на телефон*/
+
+.fonart {
+width:auto;
+height:350px;
+cursor:pointer; 
+display:inline;
+border: 4px solid #016c8b;
+}
+.fonart:focus {
+height: auto;	 
+width: 600px; 
+z-index: 100;
+}
+
 /*Нумерация и подвал*/
 
 div.item-list {position: relative; top: 0px; padding: 0 auto; margin: 0 auto; background: #1683a3; border: solid #016c8b; border-left: none; border-right: none;}
