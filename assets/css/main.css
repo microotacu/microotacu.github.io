@@ -191,7 +191,9 @@ a:after {
     font-weight: 300;
     padding: 5px;
 }
-
+#feedback button {
+    margin-bottom: 15px;
+}
 #communications i {
     font-size: 50px;
     padding: 20px;
