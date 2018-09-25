@@ -124,16 +124,22 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-offset-3 col-lg-6">
-				<form class="form" method="POST" action="https://formspree.io/artem-nevazno@mail.ru">
+				<form class="form" method="POST" action="https://formspree.io/freelancesites@mail.ru">
 					<div class="form-group">
 						<label for="exampleInputName2">Имя</label>
 						<input type="text" class="form-control" id="exampleInputName2" name="name" placeholder="Ваше имя">
 					</div>
 					<div class="form-group">
-						<label for="exampleInputName2">Почта</label>
+						<label for="exampleInputMail2">Почта</label>
 						<input type="email" class="form-control" id="exampleInputEmail2" name="email" placeholder="Ваша почта">
 					</div>
-					<button type="sumbit" class="btn btn-default">Отправить</button><br>
+					<div class="form-group">
+						<label for="exampleInputMessage2">О заказе</label>
+						<textarea type="message" class="form-control" id="exampleInputMessage2" name="message" placeholder="Ваши вопросы о заказе"></textarea>						
+					</div>
+					<input type="hidden" name="_next" value="thanks.html"/>
+					<input type="hidden" name="_subject" value="Новый заказ сайта!"/>				
+					<button type="sumbit" class="btn btn-default">Отправить</button>
 				</form>
 			</div>					
 		</div>
