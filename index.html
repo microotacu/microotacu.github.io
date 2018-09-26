@@ -19,10 +19,18 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.css">	
+
+    <!-- Put this script tag to the <head> of your page -->
+    	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
+	<script type="text/javascript">
+  		VK.init({apiId: 6703376, onlyWidgets: true});
+	</script>
   </head>
 
   <body>
+
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="index.html">Фриланс сайты</a>
@@ -38,8 +46,12 @@
       <li class="nav-item">
         <a class="nav-link" href="#" onclick="slowScroll('#services')">Услуги</a>
       </li>
-      <li class="nav-item">
+<!--  <li class="nav-item">
         <a class="nav-link" href="#" onclick="slowScroll('#communications')">Связаться</a>
+      </li>
+-->      
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="slowScroll('#comments')">Отзывы</a>
       </li>
     <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -122,6 +134,9 @@
 
 <div id="feedback">
 	<div class="container">
+		<div class="row justify-content-center">
+    		<h1>Сделать заказ</h1>
+    	</div>
 		<div class="row">
 			<div class="col-lg-offset-3 col-lg-6">
 				<form class="form" method="POST" action="https://formspree.io/freelancesites@mail.ru">
@@ -133,13 +148,14 @@
 						<label for="exampleInputMail2">Почта</label>
 						<input type="email" class="form-control" id="exampleInputEmail2" name="email" placeholder="Почта для обратной связи">
 					</div>
-					<div class="form-group"> 
+					<div class="form-group">
+					<label for="exampleInputServices2">Выберите услугу</label><Br>
 						<input type="radio" name="services" value="landing page"> landing page<Br>
    						<input type="radio" name="services" value="personal blog"> personal blog<Br>
   						<input type="radio" name="services" value="web site"> web site<Br>
       				</div> 
 					<div class="form-group">
-						<label for="exampleInputMessage2">О заказе</label>
+						<label for="exampleInputMessage2">Опишите заказ</label>
 						<textarea type="message" class="form-control" id="exampleInputMessage2" name="message" placeholder="Напишите ваши пожелания или задайте свои вопросы"></textarea>	
 					</div>
 					<input type="hidden" name="_next" value="thanks.html"/>
@@ -152,11 +168,21 @@
 	</div>
 </div>
 
-
+<!-- Put this div tag to the place, where the Comments block will be -->
+<div id="comments">
+<div class="container">
+	<div class="row justify-content-center">    	
+    	<h1>Отзывы</h1>
+    </div>
+	<div class="row">		
+		<div id="vk_comments"></div>
+	</div>
+</div>
+</div>
 
 <div id="communications">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center">    	
     <h1>Связь со мной</h1>
     </div>
     <div class="row justify-content-center">      
@@ -167,6 +193,25 @@
   </div>
 </div>
 
+<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md">
+				<div class="save">
+				<p>&copy;2018 Все права защищены главным администратором сайта<br>Копирование материалов сайта без активной гиперссылки на оригинал запрещено.</p>
+				</div>
+			</div>
+			<div class="col-md colmd">
+				<div class="save1">
+				<center><p><a href="#">Политика конфиденциальности</a></p></center>
+				</div>
+			</div>
+		</div>
+	</div>	    
+</div>
+
+<!-- VK Widget -->
+<div id="vk_community_messages"></div>
 
 <em class="active epic-icon fa fa-html5 floating" style="top:5.148514851485149%;left:2.3652365236523654%;animation-delay:-2.3s;"></em>
 <em class="active epic-icon fa fa-html5 floating" style="top:4.356435643564357%;left:12.926292629262926%;animation-delay:-0.95s;"></em>
@@ -248,6 +293,16 @@
     })
 })
   </script>
+
+  <!-- VK -->
+  <script type="text/javascript">
+	VK.Widgets.Comments("vk_comments", {limit: 5, attach: "*"});
+  </script>
+  <script type="text/javascript">
+	VK.Widgets.CommunityMessages("vk_community_messages", 164049032, {disableExpandChatSound: "1",tooltipButtonText: "Есть вопрос?"});
+  </script>
+   <!-- VK -->
+
     <script src="assets/js/bootstrap.js"></script>
   </body>
 </html>

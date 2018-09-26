@@ -204,6 +204,10 @@ a:after {
     background: #5190CC;
 }
 
+#communications {
+    display: none;
+}
+
 #communications i {
     font-size: 50px;
     padding: 20px;
@@ -213,8 +217,47 @@ a:after {
 #communications i:hover {
     color: #5190CC;
 }
+
+#vk_comments {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
 /* Footer Wrap */
 
+#footer .row {
+    background: #5190CC;
+    color: #fff;
+}
+
+#footer .save {
+    width: 500px;
+}
+
+#footer .save1 {
+    width: 300px;
+}
+
+#footer p {
+    margin: 0px;
+    padding: 15px;
+}
+
+#footer a {
+    font-size: 20px;
+    color: #fff;
+}
+
+#footer a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    #footer .save { 
+        width: 300px;
+}}
 /*Анимированный фон*/
 
 .backwrap {
