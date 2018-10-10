@@ -192,6 +192,10 @@ a:after {
     padding: 5px;
 }
 
+#feedback .row h1 {
+    margin-top: 25px;
+}
+
 #feedback button {
     background: #313338;
     color: #fff;
@@ -258,6 +262,48 @@ a:after {
     #footer .save { 
         width: 300px;
 }}
+
+/*Преимущества*/
+
+#advantages .rows {
+    min-height: 230px;
+}
+
+#advantages .row h1 {
+    margin-bottom: 25px;
+}
+
+#advantages .col-sm {
+    margin: 0px;
+    padding: 0px;
+}
+
+#advantages .col-sm img{
+    background: #5190CC;
+    border-radius: 70px;
+    width: 100px;
+    heidth: 100px;
+    margin-left: -50px;
+    padding: 0px;
+    border: none;
+}
+
+#advantages .textic {
+    margin-top: 110px;
+}
+
+#advantages .textic h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#advantages .textab {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /*Анимированный фон*/
 
 .backwrap {

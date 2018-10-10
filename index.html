@@ -76,10 +76,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#" onclick="slowScroll('#services')">Услуги</a>
       </li>
-<!--  <li class="nav-item">
-        <a class="nav-link" href="#" onclick="slowScroll('#communications')">Связаться</a>
-      </li>
--->      
+	  <li class="nav-item">
+        <a class="nav-link" href="#" onclick="slowScroll('#advantages')">Преимущества</a>
+      </li>    
       <li class="nav-item">
         <a class="nav-link" href="#" onclick="slowScroll('#comments')">Отзывы</a>
       </li>
@@ -162,6 +161,48 @@
 		</div>
 	</div>
 
+<div id="advantages">
+	<div class="container">
+		<div class="row justify-content-center">
+			<h1>Мои преимущества</h1>
+		</div>
+		<div class="row justify-content rows">
+  			<div class="col-sm">
+  				<div class="imgc"><center><img src="assets/img/6.png" alt=""></center></div>
+  				<div class="textic"><h4>Нет предоплаты</h4></div>
+  				<div class="textab">Вы оплачиваете после моей работы</div>
+  			</div>
+  			<div class="col-sm">
+  				<div class="imgc"><center><img src="assets/img/6.png" alt=""></center></div>
+  				<div class="textic"><h4>Быстро</h4></div>
+  				<div class="textab">Делаю максимум за 3 дня</div>
+  			</div>
+  			<div class="col-sm">
+  				<div class="imgc"><center><img src="assets/img/6.png" alt=""></center></div>
+  				<div class="textic"><h4>Дещево</h4></div>
+  				<div class="textab">Стоимость ниже, чем у конкурентов</div>
+  			</div>  			
+		</div>
+		<div class="row justify-content">
+  			<div class="col-sm">
+  				<div class="imgc"><center><img src="assets/img/6.png" alt=""></center></div>
+  				<div class="textic"><h4>Адаптивность</h4></div>
+  				<div class="textab">Сайт подстроится под любое разрешение экрана</div>
+  			</div>
+  			<div class="col-sm">
+  				<div class="imgc"><center><img src="assets/img/6.png" alt=""></center></div>
+  				<div class="textic"><h4>Оптимизация</h4></div>
+  				<div class="textab">Сайт проходит проверку на PageSpeed от гугл</div>
+  			</div>
+  			<div class="col-sm">
+  				<div class="imgc"><center><img src="assets/img/6.png" alt=""></center></div>
+  				<div class="textic"><h4>Тех поддержка</h4></div>
+  				<div class="textab">Незначительные изменения на сайте - делаю бесплатно</div>
+  			</div>  			
+		</div>
+	</div>
+</div>
+
 <div id="feedback">
 	<div class="container">
 		<div class="row justify-content-center">
@@ -172,21 +213,21 @@
 				<form class="form" method="POST" action="https://formspree.io/freelancesites@mail.ru">
 					<div class="form-group">
 						<label for="exampleInputName2">Имя</label>
-						<input type="text" class="form-control" id="exampleInputName2" name="name" placeholder="Ваше имя">
+						<input type="text" class="form-control" id="exampleInputName2" name="name" required placeholder="Ваше имя">
 					</div>
 					<div class="form-group">
 						<label for="exampleInputMail2">Почта</label>
-						<input type="email" class="form-control" id="exampleInputEmail2" name="email" placeholder="Почта для обратной связи">
+						<input type="email" class="form-control" id="exampleInputEmail2" name="email" required placeholder="Почта для обратной связи">
 					</div>
 					<div class="form-group">
 					<label for="exampleInputServices2">Выберите услугу</label><Br>
-						<input type="radio" name="services" value="landing page"> landing page<Br>
-   						<input type="radio" name="services" value="personal blog"> personal blog<Br>
-  						<input type="radio" name="services" value="web site"> web site<Br>
+						<input type="radio" name="services" value="landing page" required> landing page<Br>
+   						<input type="radio" name="services" value="personal blog" required> personal blog<Br>
+  						<input type="radio" name="services" value="web site" required> web site<Br>
       				</div> 
 					<div class="form-group">
 						<label for="exampleInputMessage2">Опишите заказ</label>
-						<textarea type="message" class="form-control" id="exampleInputMessage2" name="message" placeholder="Напишите ваши пожелания или задайте свои вопросы"></textarea>	
+						<textarea type="message" class="form-control" id="exampleInputMessage2" name="message" required placeholder="Напишите ваши пожелания или задайте свои вопросы"></textarea>	
 					</div>
 					<input type="hidden" name="_next" value="thanks.html"/>
 					<input type="hidden" name="_subject" value="Заказ с freelance site"/>
@@ -208,19 +249,6 @@
 		<div id="vk_comments"></div>
 	</div>
 </div>
-</div>
-
-<div id="communications">
-  <div class="container">
-    <div class="row justify-content-center">    	
-    <h1>Связь со мной</h1>
-    </div>
-    <div class="row justify-content-center">      
-      <a href="https://vk.com/id456865552" target="_blank"><i class="fa fa-vk"></i></a>
-      <a href="https://t-do.ru/joinchat/F3n1wRGtdLFP5jXXJK9-TQ" target="_blank"><i class="fa fa-telegram"></i></a>
-      <a id="buttonSave"><i class="fa fa-envelope"></i></a>
-    </div>
-  </div>
 </div>
 
 <div id="footer">
