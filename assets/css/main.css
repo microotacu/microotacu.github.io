@@ -648,3 +648,67 @@ a:after {
 .col-lg-offset-1{margin-left: 8.33333333%;}
 .col-lg-offset-0{margin-left: 0;}
 }
+
+
+.reclama {
+    position: absolute;
+    z-index: 99;
+    top: 90%;
+    left: 37%;
+}
+@media screen and (max-width: 840px) {
+    .reclama {
+        display: none;
+    }}
+
+
+.reclama1 {
+    position: absolute;
+    z-index: 99;
+    top: 82%;
+    left: 37%;
+}
+@media screen and (max-width: 840px) {
+    .reclama1 {
+        display: none;
+    }}
+
+@media screen and (max-height: 800px) {
+    .reclama1 {
+        top: 75%;
+    }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
