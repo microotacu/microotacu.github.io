@@ -1346,3 +1346,13 @@ section.hero .top {
     font-size: 60px;
 }
 /* end thank */
+
+.imwrap {
+    width: 100%;
+    position: absolute;
+}
+.fleximg {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center
+}
