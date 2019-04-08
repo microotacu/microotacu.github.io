@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Приглашение!</title>
+    <meta charset="UTF-8" />
+<style>
+body, div, h1,h2, form, fieldset, input, textarea, footer,p {
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+@font-face {
+    font-family: 'DeibiRegular';
+    src: url('deibi-webfont.eot');
+    src: url('deibi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('deibi-webfont.woff') format('woff'),
+         url('deibi-webfont.ttf') format('truetype'),
+         url('deibi-webfont.svg#DeibiRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+body, html {background: url('back.jpg'); font-family:'DeibiRegular', Helvetica, Arial, sans-serif;}
+
+#wrap {background: url('images/clouds1000.png') repeat-x, url('images/clouds1200_1.png') repeat-x 0 0, url('images/Paris_sky.jpg') 0 0;
+	width: 600px; height: 900px; overflow:hidden; display:block; position:relative; 
+	margin: 60px auto; border: 15px solid #fff; 
+	-webkit-box-shadow: 0 0 20px #bababa; -moz-box-shadow: 0 0 20px #bababa; box-shadow: 0 0 20px #bababa; 
+	-webkit-border-radius:10px; -moz-border-radius:10px; border-radius: 10px;
+	-webkit-animation: wind 80s linear infinite; -moz-animation: wind 80s linear infinite; 
+	}
+	
+	#eiffel {position:absolute; background:  url('images/Paris_eiffel.png') no-repeat ; width:240px; height:462px; right:10px; top: 180px;  }
+	
+	#sparkling1 { position:absolute; background:  url('images/sparkling1.png') no-repeat; width:240px; height:462px; opacity:0;
+	-webkit-animation: sparkling .4s .2s  infinite;-moz-animation: sparkling .4s .2s  infinite;  }
+	
+	
+	#sparkling2 { position:absolute;background:  url('images/sparkling2.png') no-repeat; width:240px; height:462px;  opacity:0;
+	-webkit-animation: sparkling .4s   infinite; -moz-animation: sparkling .4s linear infinite; }
+	
+	#eiffel_wrap {position:absolute; width:240px; height:462px; right:10px; top: 180px;opacity:0;
+		-webkit-animation: eiffel_wrap 30s 1s  infinite; -moz-animation: eiffel_wrap 30s 1s  infinite; }
+		
+		
+	#roofs {width: 600px; height: 900px; position:relative; 
+		 background:  url('images/clouds1200_2.png') repeat-x left 200px, url('images/Paris_roofs.png') repeat-x left bottom ;
+		 -webkit-animation: wind1 70s linear infinite; -moz-animation: wind1 70s linear infinite;}
+	
+	#phare {position:absolute; background: url('images/phare.png'); width:130px; height:510px; right:64px; top: 185px; opacity:0;
+	 -webkit-transform-origin: center top; -webkit-animation: phare 15s linear infinite;
+	-moz-transform-origin: center top; -moz-animation: phare 15s linear infinite;}
+	
+h1 {position:absolute; width: 300px; top: 30px; left:45px; text-shadow: 0 4px 5px #8c8c8C;color: #f2f2f2; font-size:48px;}
+p  {position:absolute; width: 300px; top: 265px; left:45px; text-shadow: 0 4px 5px #8c8c8C;color: rgb(109, 37, 156); font-size:18px;}
+h1 em {font-style:normal; font-size: 60px;}
+footer {position:absolute;  bottom: 10px; right: 10px;font-size:14px;color: #838383;}
+	
+	@-webkit-keyframes wind  {
+	         0% {background-position: 0px 200px,0px 350px, left top;}
+			50% {background-position:  500px 40px,600px 450px, left top;}
+			100% {background-position: 1000px 200px,1200px 350px, left top}
+	}
+	
+	@-moz-keyframes wind  {
+	         0% {background-position: 0px 200px,0px 350px, left top;}
+			50% {background-position:  500px 40px,600px 450px, left top;}
+			100% {background-position: 1000px 200px,1200px 350px, left top}
+	}
+	
+	@-webkit-keyframes wind1 {
+	         0% {background-position: 100px 250px, left bottom;}
+			50% {background-position:  650px 150px, left bottom;}
+			100% {background-position: 1300px 250px, left bottom}
+	}
+	
+	@-moz-keyframes wind1 {
+	         0% {background-position: 100px 250px, left bottom;}
+			50% {background-position:  650px 150px, left bottom;}
+			100% {background-position: 1300px 250px, left bottom}
+	}
+	
+	@-webkit-keyframes sparkling {
+		0% {opacity:0;}
+		50%{opacity:1;}
+		100% {opacity:0;}
+	}
+	
+	@-moz-keyframes sparkling {
+		0% {opacity:0;}
+		50%{opacity:1;}
+		100% {opacity:0;}
+	}
+
+	@-webkit-keyframes eiffel_wrap {
+		    0% {opacity:1;-webkit-animation-timing-function: steps(1);}
+			40%{opacity:0;}
+			100% {opacity:0;}
+			}
+			
+
+			
+	@-moz-keyframes eiffel_wrap {
+			0% {opacity:1;-moz-animation-timing-function: steps(1);}
+			40%{opacity:0;}
+			100% {opacity:0;}
+			}
+	
+	@-webkit-keyframes phare {
+	         0% { -webkit-transform:rotate(0deg); opacity:0 } 
+			40% { -webkit-transform:rotate(144deg); opacity:.2 } 
+			50% { -webkit-transform:rotate(180deg); opacity:1 } 
+			60% { -webkit-transform:rotate(216deg); opacity:.2 } 	
+			100% { -webkit-transform:rotate(360deg); opacity:0; }
+	}
+	
+	@-moz-keyframes phare {
+	         0% { -moz-transform:rotate(0deg); opacity:0 } 
+			40% { -moz-transform:rotate(144deg); opacity:.2 } 
+			50% { -moz-transform:rotate(180deg); opacity:1 } 
+			60% { -moz-transform:rotate(216deg); opacity:.2 } 	
+			100% { -moz-transform:rotate(360deg); opacity:0; }
+	}
+	
+	
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<h1><em>Настя</em>, это маленькое приглашение на моё ДР.</h1>
+		<p>Вообще, данная открытка, как и игра, предназначалась к твоему ДР, но я психанул тогда и не доделал, и ты знаешь почему. Поэтому
+		доделываю сейчас, хоть и в качестве приглашения уже на моё ДР. Эту мини-игру, я доделал конкретно для тебя, поменяв все уровни и оформление. Надеюсь тебе
+	понравилось. ^^ <br>З.ы. На ДР позову только тебя и друга, с которым уже 10 лет, не хочу компаний, стар стал, ахаха</p><br>
+		<div id="phare"></div>		
+		<div id="eiffel"></div>	
+		<div id="eiffel_wrap">
+			<div id="sparkling1"></div>
+			<div id="sparkling2"></div>
+		</div>
+		<div id="roofs"></div>
+		<footer>Открытка для жопастенькой, уууииии, все равно не заметит!!!</footer>   
+	</div>
+</body>
+</html>
