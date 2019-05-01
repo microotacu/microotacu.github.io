@@ -51,6 +51,12 @@ game.newLoopFromConstructor('game', function () {
 		audio.autoplay = true;
    };
 
+   var diesnd = function() {
+	var audio = new Audio(); // Создаём новый элемент Audio
+	audio.src = 'snd/die.wav'; // Указываем путь к звуку "клика"
+	audio.autoplay = true;
+};
+
 	var EDITOR = game.newTextObject({
 		text : 'Меню',
 		color : 'white',
@@ -271,8 +277,9 @@ game.newLoopFromConstructor('game', function () {
 					if (player.x+player.w > wall.x+wall.w/4 && player.x < wall.x+wall.w-wall.w/4) {
 						if (player.speed.y > 0 && player.y+player.h < wall.y+wall.h/2) {
 							if (key.isDown('W')){							
-								player.speed.y = -12.5;
-								spacesnd();}//прыжок вверх
+								player.speed.y = -12.5;//прыжок вверх
+								spacesnd();
+							}
 							else {
 								player.y = wall.y - player.h;
 								player.speed.y *= -0.0; //отпрыгивание при приземление
@@ -350,6 +357,7 @@ game.newLoopFromConstructor('game', function () {
 			}
 
 			if (enemy.isStaticIntersect(player)) {
+				diesnd();
 				restartGame();
 			}
 		});
@@ -361,6 +369,7 @@ game.newLoopFromConstructor('game', function () {
 			}
 				
 			if (behemoth.isStaticIntersect(player)) {
+				diesnd();
 				restartGame();
 			}
 		});
