@@ -69,6 +69,7 @@ game.newLoopFromConstructor('game', function () {
 		game.setLoopSound('game', [snd]);
 
 		score = 0;
+		diescore = 0;
 		OOP.clearArr(walls); //Добавить название чтобы элементы не дублировались на других уровнях
 		OOP.clearArr(cells);
 		OOP.clearArr(waters);
@@ -358,6 +359,7 @@ game.newLoopFromConstructor('game', function () {
 
 			if (enemy.isStaticIntersect(player)) {
 				diesnd();
+				diescore++;
 				restartGame();
 			}
 		});
@@ -370,6 +372,7 @@ game.newLoopFromConstructor('game', function () {
 				
 			if (behemoth.isStaticIntersect(player)) {
 				diesnd();
+				diescore++;
 				restartGame();
 			}
 		});
@@ -394,7 +397,7 @@ game.newLoopFromConstructor('game', function () {
 
 
 		brush.drawTextS({
-			text : 'Уровень: '+level+' Очки: '+score +'/10',
+			text : 'Уровень:'+level+' Очки:'+score +'/10'+ ' Умер:' + diescore,
 			size : 30,
 			color : '#FFFFFF',
 			strokeColor : '#002C5D',
