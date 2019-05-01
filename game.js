@@ -53,7 +53,7 @@ game.newLoopFromConstructor('game', function () {
 
    var diesnd = function() {
 	var audio = new Audio(); // Создаём новый элемент Audio
-	audio.src = 'snd/die.wav'; // Указываем путь к звуку "клика"
+	audio.src = 'snd/die.mp3'; // Указываем путь к звуку "клика"
 	audio.autoplay = true;
 };
 
